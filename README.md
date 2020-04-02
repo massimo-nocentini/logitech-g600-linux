@@ -19,3 +19,10 @@ The program needs privileges to communicate with G600 so typically it'll be star
 sudo chown .input g600
 sudo chmod g+s g600
 ```
+
+## Deps
+
+Before running be sure that `xdotool` is installed, in case:
+```bash
+sudo apt install xdotool
+```
