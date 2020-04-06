@@ -15,45 +15,22 @@ const char kSuffix[] = "-if01-event-kbd";
 // ADD KEY->COMMAND MAPPINGS HERE:
 const char *downCommands[] = {
   //[scancode] = "command to run",
-  [4] = "", // scroll left
-  [5] = "", // scroll right
-  [6] = "", // G8
-  [7] = "", // G7
-  [8] = "", // G9
-  [9] = "", // G10
-  [10] = "", // G11
-  [11] = "", // G12
-  [12] = "", // G13
-  [13] = "", // G14
-  [14] = "", // G15
-  [15] = "", // G16
-  [16] = "", // G17
-  [17] = "", // G18
-  [18] = "", // G19
-  [19] = "", // G20
-  [20] = "", // G-shift + scroll left
-  [21] = "", // G-shift + scroll right
-  [22] = "", // G-shift + G8
-  [23] = "", // G-shift + G7
-  [24] = "", // G-shift + G9
-  [25] = "", // G-shift + G10
-  [26] = "", // G-shift + G11
-  [27] = "", // G-shift + G12
-  [28] = "", // G-shift + G13
-  [29] = "", // G-shift + G14
-  [30] = "xdotool key ctrl+2", // G-shift + G15
+  [30] = "xdotool key ctrl+shift+e", // G9: Method sources containing it.
   [31] = "xdotool key ctrl+shift+n", // G10: references to it.
-  [32] = "xdotool key ctrl+shift+o", // G11: containing string.
+  [32] = "xdotool key ctrl+t", // G11: full context menu.
   [33] = "xdotool key ctrl+b", // G12: browse it.
   [34] = "xdotool key ctrl+n", // G13: senders of it.
   [35] = "xdotool key ctrl+m", // G14: implementors of it.
-  [36] = "xdotool key ctrl+d", // G12: do it.
-  [37] = "xdotool key ctrl+p", // G13: print it.
-  [38] = "xdotool key ctrl+i", // G14: inspect it.
+  [36] = "xdotool key ctrl+d", // G15: do it.
+  [37] = "xdotool key ctrl+p", // G16: print it.
+  [38] = "xdotool key ctrl+i", // G17: inspect it.
+  [39] = "xdotool key ctrl+shift+o", // G18: step over.
+  [45] = "xdotool key ctrl+e", // G19: step into.
+  [46] = "xdotool key ctrl+shift+t", // G20: step through.
 };
 const char *upCommands[] = {
   //[scancode] = "command to run",
-  [37] = "echo button up"
+  // [37] = "echo button up"
 };
 
 int starts_with(const char* haystack, const char* prefix) {
